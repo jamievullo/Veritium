@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		C03F608124A135D200F142B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F608024A135D200F142B2 /* AppDelegate.swift */; };
 		C03F608324A135D200F142B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F608224A135D200F142B2 /* SceneDelegate.swift */; };
-		C03F608524A135D200F142B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F608424A135D200F142B2 /* ViewController.swift */; };
 		C03F608824A135D200F142B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03F608624A135D200F142B2 /* Main.storyboard */; };
 		C03F608A24A135D400F142B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03F608924A135D400F142B2 /* Assets.xcassets */; };
 		C03F608D24A135D400F142B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03F608B24A135D400F142B2 /* LaunchScreen.storyboard */; };
+		C03F609C24A13BBE00F142B2 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03F609B24A13BBE00F142B2 /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C03F607D24A135D200F142B2 /* Veritium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veritium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03F608024A135D200F142B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03F608224A135D200F142B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C03F608424A135D200F142B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C03F608724A135D200F142B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C03F608924A135D400F142B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03F608C24A135D400F142B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03F608E24A135D400F142B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03F609B24A13BBE00F142B2 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		C03F607F24A135D200F142B2 /* Veritium */ = {
 			isa = PBXGroup;
 			children = (
+				C03F609A24A137AB00F142B2 /* Model */,
+				C03F609924A137A900F142B2 /* View */,
+				C03F609824A137A600F142B2 /* ViewModel */,
+				C03F609624A1379900F142B2 /* Controller */,
+				C03F609524A1379500F142B2 /* API */,
+				C03F609424A1378D00F142B2 /* Utilities */,
 				C03F608024A135D200F142B2 /* AppDelegate.swift */,
 				C03F608224A135D200F142B2 /* SceneDelegate.swift */,
-				C03F608424A135D200F142B2 /* ViewController.swift */,
 				C03F608624A135D200F142B2 /* Main.storyboard */,
 				C03F608924A135D400F142B2 /* Assets.xcassets */,
 				C03F608B24A135D400F142B2 /* LaunchScreen.storyboard */,
 				C03F608E24A135D400F142B2 /* Info.plist */,
 			);
 			path = Veritium;
+			sourceTree = "<group>";
+		};
+		C03F609424A1378D00F142B2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C03F609524A1379500F142B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C03F609624A1379900F142B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C03F609B24A13BBE00F142B2 /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C03F609824A137A600F142B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C03F609924A137A900F142B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C03F609A24A137AB00F142B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03F608524A135D200F142B2 /* ViewController.swift in Sources */,
 				C03F608124A135D200F142B2 /* AppDelegate.swift in Sources */,
 				C03F608324A135D200F142B2 /* SceneDelegate.swift in Sources */,
+				C03F609C24A13BBE00F142B2 /* MainTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

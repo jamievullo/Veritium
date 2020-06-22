@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainTabController.swift
 //  Veritium
 //
 //  Created by Jamie vullo on 6/22/20.
@@ -8,16 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainTabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        
+
+        view.backgroundColor = .systemPink
     }
 
-
 }
-
